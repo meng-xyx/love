@@ -1,0 +1,91 @@
+
+	  <!DOCTYPE html>
+<html>
+<head>
+  <title>For my love</title>
+  
+  <style>
+	 body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #ff99cc;
+	 
+    }
+    
+    .container {
+      width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+   
+    .letter {
+      display: none;
+    }
+    
+	.gallery-image{
+		width: 200px;
+		height: 150px;
+		margin: 10px;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		transition: transform 0.2s ease-in-out;
+	
+	}
+	.gallery-image:hover{
+		transform: scale(1.1);
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	
+	}
+  
+  
+  
+  </style>
+  
+  
+  
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Letter for my love</h1>
+    <p>Enter the number of months we've been together:</p>
+    <input id="months" type="number">
+    <button onclick="checkMonths()">Submit</button>
+    <div class="letter" id="letter">
+      <h2>My Love,</h2>
+      <p>Hello love HAHAHHAHA  </p>
+      <p>I just wanted to take a moment to</p>
+      <p>thank you for everything, your love </p>
+      <p>support, and encouragement</p>
+      <p>Thank you for being my bestfreind, my soulmate</p>
+      <p>and my everything, Im so lucky to have you in my life</p>
+      <p>I LOVE YOU LOVE</p>
+      <p>-your bebe boy</p>
+	   <div class="gallery">
+			<img src="img3.jpg" alt="Img1" class="gallery-image">
+			<img src="img2.jpg" alt="Img1" class="gallery-image">
+			<img src="img1.jpg" alt="Img1" class="gallery-image">
+	  
+	  </div>
+      
+    </div>
+  </div>
+  
+  <script>
+    function checkMonths() {
+      var months = document.getElementById("months").value;
+      var correctMonths = 2; // Replace with your actual monthsary
+      if (months == correctMonths) {
+        document.getElementById("letter").style.display = "block";
+      } else {
+        alert("Incorrect number of months. Try again!");
+      }
+    }
+  </script>
+</body>
+</html>
